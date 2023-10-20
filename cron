@@ -1,0 +1,2 @@
+# media noche todos los domingos
+0 0 * * 0 /bin/bash /ruta_proyecto/backup-restore-db.sh
