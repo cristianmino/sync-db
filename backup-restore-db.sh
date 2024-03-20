@@ -13,6 +13,8 @@ TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 # Nombre del archivo de respaldo
 BACKUP_FILE="backup_$TIMESTAMP.sql"
 
+echo $BACKUP_FILE
+
 
 # Generar respaldo de la primera base de datos
 mysqldump -u $DB_ORIGIN_USER -p $DB_ORIGIN_PASSWORD -h $DB_ORIGIN_HOST -P $DB_ORIGIN_PORT $DB_ORIGIN_NAME > $BACKUP_FILE
