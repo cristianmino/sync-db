@@ -13,7 +13,11 @@ TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 # Nombre del archivo de respaldo
 BACKUP_FILE="backup_$TIMESTAMP.sql"
 
-echo $BACKUP_FILE
+echo $DB_ORIGIN_USER
+echo $DB_ORIGIN_PASSWORD
+echo $DB_ORIGIN_HOST
+echo $DB_ORIGIN_PORT
+echo $DB_ORIGIN_NAME
 
 
 # Generar respaldo de la primera base de datos
